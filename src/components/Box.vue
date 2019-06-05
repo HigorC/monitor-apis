@@ -1,17 +1,25 @@
 <template>
-  <div>
-    <div class="box" :class="{'alert-success': req.works,'alert-danger': !req.works }">
-      <!-- <div class="header">
-          {{url}}
-      </div>-->
-      <b-spinner v-if="req.active" variant="success" label="Spinning"></b-spinner>
-      <div class="content">
-        <h2>{{nome}}</h2>
-        <h3>{{req.status}}</h3>
-      </div>
-    </div>
+  <div class="box" :class="{'box-success': req.works,'box-error': !req.works }">
+    <b-container class="box-container">
+      <b-row class="box-header" align-v="start">
+        <b-col cols="3">
+          <b-spinner v-if="req.active" variant="primary" type="grow" label="Spinning"></b-spinner>
+        </b-col>
+        <b-col class="url" cols="6">{{url}}</b-col>
+      </b-row>
+      <hr class="separador-header-body">
+      <b-row class="box-body" align-v="center">
+        <b-col cols="8" offset-md="2">
+          <div class="content">
+            <h1 class="nome">{{nome}}</h1>
+            <h3 class="status">{{req.status}}</h3>
+          </div>
+        </b-col>
+      </b-row>
+    </b-container>
   </div>
 </template>
+
 <script>
 import axios from "axios";
 
@@ -20,7 +28,7 @@ export default {
   props: {
     nome: String,
     url: String,
-    timerequest: String
+    timeToReload: String
   },
   data: function() {
     return {
@@ -36,7 +44,7 @@ export default {
       console.log("Chamando...");
       this.req.active = true;
       this.getUrl();
-    }, this.timerequest);
+    }, this.timeToReload);
   },
   methods: {
     getUrl: function() {
@@ -68,27 +76,45 @@ export default {
   }
 };
 </script>
-<style>
+<style lang="less">
 .box {
-  border: 1px solid black;
-  width: 100%;
-  height: 300px;
+  border: 1px solid #ccc;
   border-radius: 5px;
-  display: flex;
-  align-items: center;
+
+  &-success {
+    background-color: #17d060;
+  }
+
+  &-error {
+    background-color: #e84c4c;
+  }
+
+  &-header {
+    margin-top: 25px;
+    height: 40px;
+
+    .url {
+      font-style: italic;
+    }
+  }
+
+  &-body {
+    margin-bottom: 20px;
+
+    .nome {
+      color: #fff;
+      font-weight: bold;
+      font-size: 55px;
+      letter-spacing: -3px;
+      text-shadow: 1px 1px 5px #2d2d2d;
+    }
+  }
+
+  hr.separador-header-body {
+    margin: 0 0 10px 0;
+  }
 }
 
-.content {
-  margin: 0 auto;
-}
-
-/* .success {
-  background-color: green;
-}
-
-.danger {
-  background-color: red;
-} */
 </style>
 
 
