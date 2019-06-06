@@ -24,43 +24,13 @@
 <script>
 import Box from "./components/Box.vue";
 import axios from "axios";
+import apisJson from "./assets/sites.json";
 
 export default {
   name: "app",
   data: function() {
     return {
-      apis: [
-        {
-          nome: "G1",
-          url: "https://g1.globo.om/",
-          timeToReload: "20000"
-        },
-        {
-          nome: "Google",
-          url: "https://google.com/",
-          timeToReload: "20000"
-        },
-        {
-          nome: "W3S",
-          url: "https://www.w3schools.com",
-          timeToReload: "20000"
-        },
-        {
-          nome: "G1",
-          url: "https://g1.globo.om/",
-          timeToReload: "20000"
-        },
-        {
-          nome: "Google",
-          url: "https://google.com/",
-          timeToReload: "20000"
-        },
-        {
-          nome: "W3S",
-          url: "https://www.w3schools.com",
-          timeToReload: "20000"
-        }
-      ]
+      apis: apisJson
     };
   },
   components: {

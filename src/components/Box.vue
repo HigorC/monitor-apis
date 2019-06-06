@@ -2,7 +2,7 @@
   <div class="box" :class="{'box-success': req.works,'box-error': !req.works }">
     <b-container class="box-container">
       <b-row class="box-header" align-v="start">
-        <b-col cols="3">
+        <b-col cols="2">
           <b-spinner v-if="req.active" variant="primary" type="grow" label="Spinning"></b-spinner>
         </b-col>
         <b-col class="url" cols="6">{{url}}</b-col>

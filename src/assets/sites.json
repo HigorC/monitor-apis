@@ -1,0 +1,42 @@
+[
+    {
+      "nome": "G1",
+      "url": "https://g1.globo.om/",
+      "timeToReload": "20000"
+    },
+    {
+      "nome": "Google",
+      "url": "https://google.com/",
+      "timeToReload": "20000"
+    },
+    {
+      "nome": "W3S",
+      "url": "https://www.w3schools.com",
+      "timeToReload": "20000"
+    },
+    {
+      "nome": "Spotify",
+      "url": "https://www.spotify.com/br/",
+      "timeToReload": "20000"
+    },
+    {
+      "nome": "Edoc",
+      "url": "https://www.edoc.ms.gov.br/",
+      "timeToReload": "19000"
+    },
+    {
+      "nome": "Youtube",
+      "url": "https://www.youte.com",
+      "timeToReload": "20000"
+    },
+    {
+      "nome": "Netflix",
+      "url": "https://www.netf.com/br/",
+      "timeToReload": "20000"
+    },
+    {
+      "nome": "GitHub",
+      "url": "https://www.ght.com",
+      "timeToReload": "20000"
+    }
+  ]
