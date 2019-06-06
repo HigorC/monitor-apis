@@ -33,32 +33,32 @@ export default {
         {
           nome: "G1",
           url: "https://g1.globo.om/",
-          timeToReload: "10000"
+          timeToReload: "20000"
         },
         {
           nome: "Google",
           url: "https://google.com/",
-          timeToReload: "10000"
+          timeToReload: "20000"
         },
         {
           nome: "W3S",
           url: "https://www.w3schools.com",
-          timeToReload: "10000"
+          timeToReload: "20000"
         },
         {
           nome: "G1",
           url: "https://g1.globo.om/",
-          timeToReload: "10000"
+          timeToReload: "20000"
         },
         {
           nome: "Google",
           url: "https://google.com/",
-          timeToReload: "10000"
+          timeToReload: "20000"
         },
         {
           nome: "W3S",
           url: "https://www.w3schools.com",
-          timeToReload: "10000"
+          timeToReload: "20000"
         }
       ]
     };
@@ -77,6 +77,10 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+}
+
+body {
+  background: #ececece0;
 }
 
 .cols-boxes {
