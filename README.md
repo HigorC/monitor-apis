@@ -1,29 +1,20 @@
-# apis-monitor
+# Monitor de API's
 
-## Project setup
+Criado com a intenção de visualizar a disponibilidade de API's e websites.
+
+Link no heroku: https://apis-monitor.herokuapp.com/
+
+### Instalação
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Para rodar
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### Compilar para produção
 ```
 npm run build
 ```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
